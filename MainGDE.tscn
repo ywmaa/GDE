@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c07dff41nkvhw"]
+[gd_scene load_steps=3 format=3 uid="uid://c07dff41nkvhw"]
 
 [ext_resource type="Script" path="res://MainGDE.gd" id="1_crxyt"]
+[ext_resource type="Texture2D" uid="uid://dmhx2hwwt5jxt" path="res://Default Wallpapers/PlanetEarthBlenderEevee.png" id="2_g02pp"]
 
 [node name="MainGDE" type="Control"]
 show_behind_parent = true
@@ -12,11 +13,12 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_crxyt")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="Desktop Background" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-bbcode_enabled = true
+texture = ExtResource("2_g02pp")
+ignore_texture_size = true

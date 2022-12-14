@@ -10,6 +10,7 @@ position = Vector2i(332, 90)
 size = Vector2i(500, 500)
 wrap_controls = true
 exclusive = true
+transparent = true
 script = ExtResource("1_a5y3x")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
@@ -24,7 +25,6 @@ follow_focus = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ScrollContainer"]
 clip_contents = false
-layout_mode = 2
 bbcode_enabled = true
 fit_content_height = true
 scroll_active = false
