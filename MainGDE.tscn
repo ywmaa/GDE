@@ -1,15 +1,16 @@
 [gd_scene load_steps=2 format=3 uid="uid://c07dff41nkvhw"]
 
-[ext_resource type="Script" path="res://crackle.gd" id="1_x4ljx"]
+[ext_resource type="Script" path="res://MainGDE.gd" id="1_crxyt"]
 
-[node name="Control" type="Control"]
+[node name="MainGDE" type="Control"]
+show_behind_parent = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_x4ljx")
+script = ExtResource("1_crxyt")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 1

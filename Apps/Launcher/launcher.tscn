@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2sx71pg83htm"]
+
+[ext_resource type="Script" path="res://Apps/Launcher/launcher.gd" id="1_gudo7"]
+
+[node name="Launcher" type="Window"]
+disable_3d = true
+size = Vector2i(500, 50)
+borderless = true
+always_on_top = true
+popup_window = true
+script = ExtResource("1_gudo7")
+
+[node name="Search" type="LineEdit" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Launcher"
+alignment = 3
+clear_button_enabled = true
+select_all_on_focus = true
+caret_blink = true
+caret_blink_interval = 0.5

@@ -1,7 +1,5 @@
 extends Control
 # refer to this for original crackle : https://github.com/tuxecure/crackle/blob/bash/crackle
-
-
 var output : Array #use it to retrieve results from bash commands
 # Configuration for Apt
 var APTCACHE : String
@@ -39,9 +37,5 @@ func _ready():
 		$RichTextLabel.text += text
 	output.clear()
 	
-	
 
-
-func _process(delta):
-	pass
 

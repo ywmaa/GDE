@@ -8,9 +8,43 @@
 
 config_version=5
 
+_global_script_classes=[{
+"base": "Window",
+"class": &"Launcher",
+"language": &"GDScript",
+"path": "res://Apps/Launcher/launcher.gd"
+}, {
+"base": "Window",
+"class": &"SystemMonitor",
+"language": &"GDScript",
+"path": "res://Apps/SystemMonitor/system_monitor.gd"
+}]
+_global_script_class_icons={
+"Launcher": "",
+"SystemMonitor": ""
+}
+
 [application]
 
 config/name="GDE"
-run/main_scene="res://control.tscn"
+run/main_scene="res://MainGDE.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+AppManager="*res://app_manager.gd"
+
+[display]
+
+window/size/mode=4
+window/size/resizable=false
+window/size/borderless=true
+
+[input]
+
+Launcher={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194326,"unicode":0,"echo":false,"script":null)
+]
+}
