@@ -9,6 +9,11 @@
 config_version=5
 
 _global_script_classes=[{
+"base": "Node",
+"class": &"DirectoryWatcher",
+"language": &"GDScript",
+"path": "res://Utils/DirectoryWatcher/DirectoryWatcher.gd"
+}, {
 "base": "Control",
 "class": &"Dock",
 "language": &"GDScript",
@@ -23,11 +28,18 @@ _global_script_classes=[{
 "class": &"SystemMonitor",
 "language": &"GDScript",
 "path": "res://Apps/SystemMonitor/system_monitor.gd"
+}, {
+"base": "Resource",
+"class": &"app_data",
+"language": &"GDScript",
+"path": "res://AppManager/app_data.gd"
 }]
 _global_script_class_icons={
+"DirectoryWatcher": "",
 "Dock": "",
 "Launcher": "",
-"SystemMonitor": ""
+"SystemMonitor": "",
+"app_data": ""
 }
 
 [application]
@@ -47,6 +59,10 @@ AppManager="*res://app_manager.gd"
 window/size/mode=4
 window/size/resizable=false
 window/size/borderless=true
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/terminal/plugin.cfg")
 
 [input]
 

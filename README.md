@@ -1,7 +1,7 @@
 # GDE
  a hobby project. Hopefully this can become a full desktop environment made in Godot Engine, A Desktop  Environment that supports both normal 2D screens and work as a VR Environment too.
  currently the project is targeting linux
-## Godot Engine Version : Godot 4 Beta 8
+## Godot Engine Version : Godot 4 Beta 12
 
 # Current Features :
 1- Launcher (press CTRL to show), basically will execute provided text as bash command
